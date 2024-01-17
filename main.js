@@ -115,6 +115,7 @@ app.post('/login', async(req, res) => {
     }
 })
 
+// need login 
 // Get all employee
 app.get('/employees', authenticateToken, async(req, res) => {
     try {
@@ -130,7 +131,6 @@ app.get('/employees', authenticateToken, async(req, res) => {
     }
 })
 
-// need login 
 // Create new employee
 app.post('/create', authenticateToken, async(req, res) => {
     try {
